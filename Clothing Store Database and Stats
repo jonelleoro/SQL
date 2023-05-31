@@ -1,0 +1,35 @@
+--Create a clothing store database
+
+CREATE TABLE gothreads (id INTEGER PRIMARY KEY, item TEXT, stock INTEGER, color TEXT, price INTEGER);
+
+INSERT INTO gothreads VALUES (1, "Blurgh Skirt", 3, "Black" , 15);
+INSERT INTO gothreads VALUES (2, "Nice Shirt", 3, "Black" , 10);
+INSERT INTO gothreads VALUES (3, "Sparkles Dress", 3, "Black" , 20);
+INSERT INTO gothreads VALUES (4, "Slumber Pants", 3, "Black", 15);
+INSERT INTO gothreads VALUES (5, "Hunger Boots", 3, "Black" , 30);
+INSERT INTO gothreads VALUES (6, "Yikes Dress", 6, "Black", 45);
+INSERT INTO gothreads VALUES (7, "Ugly Dog", 6, "Black", 5);
+INSERT INTO gothreads VALUES (8, "Perfect Bread", 3, "Black", 35);
+INSERT INTO gothreads VALUES (9, "Stinky Cheese", 5, "Black", 45);
+INSERT INTO gothreads VALUES (10, "Warped Wobble", 7, "Black", 35);
+INSERT INTO gothreads VALUES (11, "Single Scoop", 7, "Black", 55);
+INSERT INTO gothreads VALUES (12, "Oooh Oooh", 5, "Black", 15);
+INSERT INTO gothreads VALUES (13, "Ghost Chunk", 10, "Black", 65);
+INSERT INTO gothreads VALUES (14, "Whoops", 1, "Black", 75);
+INSERT INTO gothreads VALUES (15, "Luna Wolf", 10, "Black", 25);
+
+--Display all items in the database
+SELECT * FROM gothreads;
+
+--Display all items in the database by descending price
+SELECT * FROM gothreads ORDER BY price desc;
+
+--Display the sum of all items from the database
+SELECT SUM (price) FROM gothreads;
+
+--Display the highest price from all items in the database
+SELECT MAX (price) FROM gothreads;
+
+--Display the average price of all items in the database
+SELECT AVG (price) FROM gothreads;
+
